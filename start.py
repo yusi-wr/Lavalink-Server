@@ -39,6 +39,7 @@ if not os.path.isfile("Lavalink.jar"):
 	repo_name = "LL-binaries"
 	a = os.popen(f'curl -s -H "Authorization: token {token}" https://api.github.com/repos/{author_id}/{repo_name}/releases/latest').read().strip()
 	a = json.loads(a)
+	print(a)
 	asset_id = (a['assets'][0]['id'])
 	url = f"https://api.github.com/repos/{author_id}/{repo_name}/releases/assets/{asset_id}?access_token={token}"
 	os.system(f"wget -q --header='Accept:application/octet-stream' -O Lavalink.jar {url}")
