@@ -35,7 +35,7 @@ def start():
 if not os.path.isfile("Lavalink.jar"):
 	print("Baixando lavalink")
 	token = 'c081c0771b1908ece26aae2df6ffdc8f0e276fd6'
-	author_id = "zRitsu"
+	author_id = "zxRitsu"
 	repo_name = "LL-binaries"
 	a = os.popen(f'curl -s -H "Authorization: token {token}" https://api.github.com/repos/{author_id}/{repo_name}/releases/latest').read().strip()
 	a = json.loads(a)
