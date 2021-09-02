@@ -16,8 +16,8 @@ lavalink:
       mixer: true
       http: true
       local: false
-    bufferDurationMs: 400 # The duration of the NAS buffer. Higher values fare better against longer GC pauses
-    frameBufferDurationMs: 7000 # How many milliseconds of audio to keep buffered
+    bufferDurationMs: 500 # The duration of the NAS buffer. Higher values fare better against longer GC pauses
+    frameBufferDurationMs: 5000 # How many milliseconds of audio to keep buffered
     youtubePlaylistLoadLimit: 4
     youtubeSearchEnabled: true
     soundcloudSearchEnabled: true
