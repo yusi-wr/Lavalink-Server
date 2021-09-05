@@ -3,6 +3,7 @@ import json
 import traceback
 import asyncio
 import threading
+from socket import getfqdn
 
 URL = os.environ.get("SOCKET_URL")
 
@@ -52,6 +53,8 @@ if not os.path.isfile("Lavalink.jar"):
 #	data = data.replace("%PORT_HERE%", str(os.environ.get('PORT', '2333'))).replace("%PASSWORD_HERE%", os.environ.get("PASSWORD", '"youshallnotpass"'))
 #with open("application.conf", "w") as fw:
 #	fw.write(data)
+
+print(f"Host = {getfqdn()}")
 
 os.system('sed -i "s|PORT|$PORT|" application.yml')
 password = os.environ.get("PASSWORD")
