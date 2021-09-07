@@ -59,7 +59,7 @@ print(f"Host = {getfqdn()}")
 os.system('sed -i "s|PORT|$PORT|" application.yml')
 password = os.environ.get("PASSWORD")
 os.system(f'sed -i "s|PASSWORD|{"$PASSWORD" if password else "youshallnotpass"}|" application.yml')
-options = os.environ.get("JAVA_TOOL_OPTIONS", "")
+options = os.environ.get("JAVA_OPTS", "")
 
 # os.system(f'java {java_options} -jar Lavalink.jar')
 # options = "-XX:CICompilerCount=2 -XX:ActiveProcessorCount=8 -Dfile.encoding=UTF-8 -Xmx450m -Xss512k"
