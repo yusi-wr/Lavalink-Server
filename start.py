@@ -44,7 +44,7 @@ if not os.path.isfile("Lavalink.jar"):
 	#asset_id = (a[0]['assets'][0]['id'])
 	#url = f"https://api.github.com/repos/{author_id}/{repo_name}/releases/assets/{asset_id}?access_token={token}"
 	#url = f"https://github.com/zRitsu/LL-binaries/releases/download/0.0.1/Lavalink.jar?access_token={token}"
-	url = "https://cdn.discordapp.com/attachments/789164291676307508/875173663840804874/Lavalink.jar"
+	url = "https://cdn.discordapp.com/attachments/554468640942981147/884601296500428820/Lavalink.jar"
 	os.system(f"wget -q --header='Accept:application/octet-stream' -O Lavalink.jar {url}")
 	print("Download concluido")
 
