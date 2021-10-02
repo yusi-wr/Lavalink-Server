@@ -35,20 +35,7 @@ def start():
 
 if not os.path.isfile("Lavalink.jar"):
 	print("Baixando lavalink")
-	#token = 'fb2958cd03ed29ba056af868429f091ffe96c4b2'
-	#author_id = "zRitsu"
-	#repo_name = "LL-binaries"
-	#a = os.popen(f'curl -s -H "Authorization: token {token}" https://api.github.com/repos/{author_id}/{repo_name}/releases').read().strip()
-	#print(a)
-	#a = json.loads(a)
-	#asset_id = (a[0]['assets'][0]['id'])
-	#url = f"https://api.github.com/repos/{author_id}/{repo_name}/releases/assets/{asset_id}?access_token={token}"
-	#url = f"https://github.com/zRitsu/LL-binaries/releases/download/0.0.1/Lavalink.jar?access_token={token}"
-	url = os.environ.get("LAVALINK_URL")
-
-	if not url:
-		url = "https://cdn.discordapp.com/attachments/480195401543188483/887115802065633321/Lavalink.jar"
-		print("Usando link padrão do lavalink")
+	url = "https://github.com/zRitsu/LL-binaries/releases/download/0.0.1/Lavalink.jar"
 	os.system(f"wget -q --header='Accept:application/octet-stream' -O Lavalink.jar {url}")
 	print("Download concluido")
 
