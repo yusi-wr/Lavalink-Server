@@ -1,1 +1,2 @@
-# Lavalink Server
+# Lavalink Server 📡
+**Python version**
